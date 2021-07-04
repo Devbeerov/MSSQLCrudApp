@@ -68,7 +68,6 @@ namespace MSSQLCrudApp
         private static ISessionFactory ConfigureDB()
         {
             var config = new Configuration().Configure();
-            //new SchemaUpdate(config).Execute(true, true);
 
             return config.BuildSessionFactory();
         }
